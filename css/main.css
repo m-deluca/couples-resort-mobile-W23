@@ -1,0 +1,82 @@
+/* --- Basic CSS Reset --- */
+
+h1, h2, h3, h4, h5, p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    transition: all .5s ease-in-out;
+}
+
+input, textarea {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+/* 
+
+    CSS Guide
+
+    1. General Styles
+    2. Grid
+    3. Header
+    4. Main Hero Image
+    5. Why Couples Resort
+    6. About & FAQ
+    7. Contact Form
+    8. Footer
+
+*/
+
+/* 1. ---General Styles--- */
+
+.hidden {
+    display: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #626262;
+    font-family: 'Sanchez', 'Times New Roman', serif;
+}
+
+.cr-red {
+    color: #9a2018;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    /* horz offset, vertical offset, blur distance */
+    box-shadow: 0px 5px 8px #888888;
+}
+
+/* 2. ---Grid--- */
+
+/* this is the exact same grid used in Adobe XD, we have recreated 
+the grid using CSS. It is a class becasue we will use multiple grids */
+
+.grid {
+    display: grid;
+    padding-left: 15px;
+    padding-right: 15px;
+    grid-template-columns: repeat(12, 70px);
+    grid-column-gap: 30px;
+}
+
+/* 3. ---Header--- */
+
+/* 4. ---Main Hero Image--- */
+
+/* 5. --- Why Couples Resort--- */
+
+ /* 6. ---About & FAQ --- */
+ 
+/* 7. ---Contact Form--- */
+
+/* .8 --- Footer --- */

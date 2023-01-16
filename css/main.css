@@ -80,7 +80,7 @@ the grid using CSS. It is a class becasue we will use multiple grids */
     grid-column: 1/-1;
 }
 
-#main-nav button {
+#main-nav label img {
 	background: url(../images/burger.svg) center no-repeat;
 	border: 0px;
 	width: 20px;
@@ -89,10 +89,6 @@ the grid using CSS. It is a class becasue we will use multiple grids */
     margin-top: 15px;
     margin-bottom: 20px;
     cursor: pointer;
-}
-
-#burger-con {
-    display: none;
 }
 
 #main-nav ul {
@@ -118,6 +114,18 @@ the grid using CSS. It is a class becasue we will use multiple grids */
  
  #main-nav li:last-child {
      margin-bottom: 10px;
+ }
+
+#burger-con, #main-nav input {
+    display: none;
+}
+
+ #main-nav input:checked ~ #burger-con {
+    display: block;
+ }
+
+ #main-nav input:checked ~ label img{
+    transform: rotate(90deg);
  }
 
  #logo {

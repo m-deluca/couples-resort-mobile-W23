@@ -93,6 +93,12 @@ the grid using CSS. It is a class becasue we will use multiple grids */
     grid-column-gap: 30px;
 }
 
+.grid-full {
+   display: grid;
+   grid-template-columns: 320px;
+   grid-column-gap: 30px;
+}
+
 /* 3. ---Header--- */
 
 #main-nav {
@@ -158,11 +164,13 @@ the grid using CSS. It is a class becasue we will use multiple grids */
 }
 
 #main-hero img {
-    /* use sparingly */
-    margin-left: -15px;
-    margin-right: -15px;
     grid-column: 1/-1;
-    grid-row: 1/3;
+    grid-row: 1/1;   
+}
+
+#hero-overlap {
+   grid-column: 1/-1;
+   grid-row: 1/1; 
 }
 
 .book-now {
@@ -274,10 +282,13 @@ the grid using CSS. It is a class becasue we will use multiple grids */
 
 #why-hero img {
     /* use sparingly */
-    margin-left: -15px;
-    margin-right: -15px;
     grid-column: 1/-1;
-    grid-row: 1/3;
+    grid-row: 1/1;
+}
+
+#why-hero-overlap {
+   grid-column: 1/-1;
+   grid-row: 1/1;
 }
 
 /* first-of-type will match the first occurrence of a specified element, even if it doesn’t come absolutely first in the HTML. */
@@ -337,11 +348,13 @@ the grid using CSS. It is a class becasue we will use multiple grids */
  /* 6. ---About & FAQ --- */
 
  #about-hero img {
-    /* use sparingly */
-    margin-left: -15px;
-    margin-right: -15px;
     grid-column: 1/-1;
-    grid-row: 1/3;
+    grid-row: 1/1;
+}
+
+#about-hero-overlap {
+   grid-column: 1/-1;
+   grid-row: 1/1;
 }
 
 #about-text div {
@@ -408,12 +421,15 @@ the grid using CSS. It is a class becasue we will use multiple grids */
 /* 7. ---Contact Form--- */
 
 #contact-form-hero img {
-    /* use sparingly */
-    margin-left: -15px;
-    margin-right: -15px;
     grid-column: 1/-1;
-    grid-row: 1/3;
+    grid-row: 1/1;
 }
+
+#contact-form-overlap {
+   grid-column: 1/-1;
+   grid-row: 1/1;
+}
+
 
 #contact-form-text p {
     border-top: solid 3px #CF6666;
